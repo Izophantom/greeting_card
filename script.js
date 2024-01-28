@@ -1,5 +1,5 @@
-// Дата начала отпуска (29.01.2024 в 17:15)
-const vacationDate = new Date("2024-01-29T17:15:00Z").getTime();
+// Дата начала отпуска (29.01.2024 в 17:15 по московскому времени)
+const vacationDate = new Date("2024-01-29T17:15:00+03:00").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
