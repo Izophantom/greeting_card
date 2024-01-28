@@ -15,7 +15,7 @@ function updateCountdown() {
   } else {
     document.getElementById("countdown").innerHTML = "Отпуск начался! Отлично отдохнуть!";
     clearInterval(interval); // Остановка интервала после достижения даты
-  }
+  } 
 }
 
 // Обновляем счетчик каждую секунду
