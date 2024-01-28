@@ -18,5 +18,5 @@ function updateCountdown() {
   }
 }
 
-// Обновляем счетчик каждую секунду
+// Обновляем счетчик каждую секунду 
 const interval = setInterval(updateCountdown, 1000);
