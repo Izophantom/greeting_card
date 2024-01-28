@@ -1,5 +1,5 @@
 // Дата окончания отпуска (29.01.2024 в 17:15)
-const vacationDate = new Date("2024-01-29T17:15:00Z").getTime();
+const vacationDate = new Date("2024-01-29T17:15:00Z").getTime() - (3 * 60 * 60 * 1000);
 
 function updateCountdown() {
   const now = new Date().getTime();
@@ -13,9 +13,9 @@ function updateCountdown() {
 
     document.getElementById("countdown").innerHTML = `${days}д ${hours}ч ${minutes}м ${seconds}с`;
   } else {
-    document.getElementById("countdown").innerHTML = "Отпуск начался! Отлично отдохнуть!";
+    document.getElementById("countdown").innerHTML = "Отпуск начался! Отлично отдохнуть!!!";
     clearInterval(interval); // Остановка интервала после достижения даты
-  } 
+  }
 }
 
 // Обновляем счетчик каждую секунду
